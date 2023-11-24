@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>2048 Game Online</title>
+    <link rel="stylesheet" href="./game.css">
+    <script src="./game.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="info">
+        <img src="../assets/images.png" alt="Logo" id="logo">
+        <h1>2048</h1>
+        <img id="playButton" src="../assets/mute.png" alt="Play Button">
+        <div class="score-container">
+          <div class="score-title">Score:</div>
+          <span id="score">0</span>
+        </div>
+      </div>
+      <span id="result">Join the numbers and get to the <b>2048</b> tile!</span>
+      <div class="grid"></div>
+      <button type="button" id="button" >New game</button>
+      <script>
+        var button = document.getElementById("button");
+        button.addEventListener("click", function() {
+  
+        alert("Are you sure? All the progress will be lost.");
+       location.reload();
+       });
+      </script>
+    </div>
+  </body> 
+</html>
